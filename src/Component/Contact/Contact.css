@@ -1,0 +1,139 @@
+.contact-section {
+  overflow: hidden;
+  padding: 5rem 0;
+  background-color: #f5f5f5;
+}
+
+.contact-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+
+@media (min-width: 1280px) {
+  .contact-wrapper {
+    flex-direction: row;
+  }
+}
+
+.contact-info-card {
+  width: 100%;
+  max-width: 370px;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-header {
+  padding: 1.25rem 1rem;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.contact-info-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.contact-info-body {
+  padding: 1rem 1.25rem;
+}
+
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #111827;
+}
+
+.contact-form-card {
+  width: 100%;
+  max-width: 770px;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .form-row {
+    flex-direction: row;
+  }
+}
+
+.form-field {
+  width: 100%;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.625rem;
+  color: #111827;
+}
+
+.required {
+  color: red;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.625rem 1.25rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  background-color: #f3f4f6;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px rgba(60, 80, 224, 0.2);
+}
+
+.form-textarea-group {
+  margin-bottom: 1.875rem;
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 1.25rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  background-color: #f3f4f6;
+  resize: vertical;
+}
+
+.form-submit-btn {
+  background-color: #3c50e0;
+  color: white;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: 0.2s ease-out;
+  border: none;
+  cursor: pointer;
+}
+
+.form-submit-btn:hover {
+  background-color: #2f3fb2;
+}

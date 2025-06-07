@@ -1,0 +1,87 @@
+/* Container */
+.price-dropdown-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06); /* shadow-1 */
+}
+
+/* Header */
+.price-dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 22px 12px 24px;
+  cursor: pointer;
+}
+
+.price-dropdown-title {
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.price-dropdown-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  transition: transform 0.2s ease-out;
+  cursor: pointer;
+}
+
+.price-dropdown-toggle.rotated {
+  transform: rotate(180deg);
+}
+
+.price-dropdown-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Body */
+.price-dropdown-body {
+  padding: 24px;
+}
+
+.price-dropdown-body.hidden {
+  display: none;
+}
+
+.price-dropdown-body.visible {
+  display: block;
+}
+
+/* Price Range Slider */
+.price-range-section {
+  width: 100%;
+}
+
+/* Slider spacing (if needed) */
+.price-range-slider {
+  margin-bottom: 16px;
+}
+
+/* Price display */
+.price-amount-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #6b7280; /* gray-500 */
+  border: 1px solid rgba(209, 213, 219, 0.8); /* border-gray-3/80 */
+  border-radius: 6px;
+}
+
+.price-symbol {
+  padding: 6px 10px;
+  border-right: 1px solid rgba(209, 213, 219, 0.8);
+}
+
+.price-value {
+  padding: 6px 12px;
+}

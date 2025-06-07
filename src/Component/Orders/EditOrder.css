@@ -1,0 +1,41 @@
+.order-status-container {
+  width: 100%;
+  padding-left: 2.5rem; /* px-10 */
+  padding-right: 2.5rem;
+}
+
+.order-status-title {
+  padding-bottom: 0.5rem; /* pb-2 */
+  font-weight: 500;
+  color: #1e1e1e; /* Replace with your dark text color */
+}
+
+.order-status-inner {
+  width: 100%;
+}
+
+.order-status-select {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #d1d5db; /* gray-3 */
+  background-color: #f3f4f6; /* gray-1 */
+  color: #1e1e1e;
+  padding: 0.875rem 1.25rem; /* py-3.5 px-5 */
+  font-size: 0.875rem; /* text-custom-sm */
+}
+
+.order-status-button {
+  margin-top: 1.25rem; /* mt-5 */
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #2563eb; /* blue-1 */
+  background-color: #2563eb; /* blue */
+  color: #ffffff;
+  padding: 0.875rem 1.25rem; /* py-3.5 px-5 */
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.order-status-button:hover {
+  background-color: #1d4ed8; /* Optional hover effect */
+}

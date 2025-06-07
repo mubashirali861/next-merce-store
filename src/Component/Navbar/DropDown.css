@@ -1,0 +1,183 @@
+.nav-link-li {
+  position: relative;
+  padding: 0.25rem 0;
+  color: #606882;
+}
+
+/* Underline effect using ::before */
+.nav-link-li::before {
+  content: "";
+  position: absolute;
+  top: 0; /* underline at bottom */
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  border-radius: 0 0 3px 3px;
+  transition: width 0.2s ease-out;
+}
+
+/* Show underline on hover or keyboard focus */
+.nav-link-li:hover::before,
+.nav-link-li:focus-within::before {
+  width: 100%;
+}
+
+/* Links inside nav items */
+.nav-link-li a {
+  color: #1f2937; /* Tailwind gray-800 */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0.25rem 0;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Link hover & focus color */
+.nav-link-li a:hover,
+.nav-link-li a:focus {
+  color: #2563eb; /* Tailwind blue-600 */
+  outline: none;
+}
+
+.nav-link-li:hover > .dropdown {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.menu-link {
+  display: flex;
+  font-weight: 500;
+  color: #1f2937; /* Replace with your Tailwind "text-dark" color */
+  font-size: 0.875rem; /* Replace with your custom "text-custom-sm" size */
+  transition: color 0.2s ease-in-out;
+}
+
+.menu-link:hover {
+  color: #007bff; /* Replace with your Tailwind "blue" */
+}
+
+/* Responsive padding */
+@media (min-width: 1280px) {
+  .menu-link.sticky {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .menu-link:not(.sticky) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  color: #1f2937; /* Replace with Tailwind's text-dark color */
+  font-size: 1rem; /* Replace with custom-sm if different */
+  text-transform: capitalize;
+  transition: color 0.2s ease-in-out;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  color: #007bff; /* Tailwind blue */
+}
+
+.menu-link.sticky {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.menu-link.active {
+  color: #007bff !important;
+}
+
+/* Show dropdown on hover (inside a group container) */
+@media (min-width: 1280px) {
+  .group:hover .dropdown {
+    transform: translateY(0);
+  }
+}
+.dropdown {
+  list-style: none;
+  display: none; /* default hidden */
+  position: absolute; /* dropdown appears relative to parent */
+  top: 100%; /* just below the menu link */
+  left: 0;
+  flex-direction: column;
+  background: white;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  border-radius: 4px;
+  min-width: 180px; /* or whatever width you want */
+  z-index: 1000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none; /* prevent interaction when hidden */
+}
+
+.dropdown.flex {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto; /* enable interaction */
+}
+.menu-subitem {
+  display: flex;
+  font-size: 0.875rem; /* replace with your custom-sm size */
+  padding: 7px 1.125rem; /* py-[7px] and px-4.5 */
+  color: #1f2937; /* default text-dark color */
+  text-decoration: none;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.menu-subitem:hover {
+  color: #007bff; /* Tailwind blue */
+  background-color: #f3f4f6; /* Tailwind gray-1 or your gray */
+}
+
+/* .menu-subitem {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  font-size: 0.875rem; Replace with your "text-custom-sm" value
+  padding: 7px 18px;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-subitem:hover {
+  color: #007bff; Tailwind's blue
+  background-color: #f3f4f6; Replace with your gray-1
+}
+
+.menu-subitem.active {
+  color: #007bff;
+  background-color: #f3f4f6;
+} */
+
+.arrow-setting {
+  fill: currentColor; /* SVG fill uses the current text color */
+}
+
+.arrow-setting {
+  cursor: pointer; /* Cursor changes to pointer on hover */
+}
+
+.arrow-setting {
+  transition: transform 0.3s ease;
+  display: inline-block; /* make sure transform works properly */
+}
+
+/* Rotate arrow when hovering the whole link */
+.menu-link:hover .arrow-setting,
+.menu-link:focus .arrow-setting {
+  transform: rotate(180deg);
+}

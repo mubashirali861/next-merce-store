@@ -1,0 +1,11 @@
+.action-btn {
+  padding: 8px; /* p-2 */
+  border-radius: 4px; /* rounded-sm */
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.action-btn:hover {
+  background-color: #f1f2f4; /* hover:bg-gray-2 */
+}

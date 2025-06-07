@@ -1,0 +1,112 @@
+.cart-item-row {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #e5e7eb; /* gray-3 */
+  padding: 20px 30px;
+}
+
+.cart-item-product {
+  min-width: 400px;
+}
+
+.cart-item-product-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 1.375rem;
+}
+
+.cart-item-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f4f6; /* gray-2 */
+  border-radius: 5px;
+  max-width: 80px;
+  width: 100%;
+  height: 70px;
+}
+
+.cart-item-title a {
+  color: #1f2937; /* text-dark */
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.cart-item-title a:hover {
+  color: #2563eb; /* text-blue */
+}
+
+.cart-item-price,
+.cart-item-subtotal {
+  min-width: 180px;
+  color: #1f2937;
+}
+
+.cart-item-qty {
+  min-width: 275px;
+}
+
+.cart-item-qty-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e7eb; /* gray-3 */
+  border-radius: 6px;
+  width: max-content;
+}
+
+.cart-item-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.cart-item-btn:hover {
+  color: #2563eb; /* hover:text-blue */
+}
+
+.cart-item-qty-value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 46px;
+  border-left: 1px solid #d1d5db; /* gray-4 */
+  border-right: 1px solid #d1d5db;
+}
+
+.cart-item-action {
+  min-width: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart-item-remove-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background-color: #f3f4f6; /* gray-2 */
+  border: 1px solid #e5e7eb; /* gray-3 */
+  color: #1f2937; /* text-dark */
+  transition: all 0.2s ease;
+}
+
+.cart-item-remove-btn:hover {
+  background-color: #ffe4e6; /* red-light-6 */
+  border-color: #fecaca; /* red-light-4 */
+  color: #ef4444; /* red */
+}
+
+.singleitem-cart-title {
+  font-size: 1rem;
+}

@@ -1,0 +1,24 @@
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 2rem; /* 8 * 0.5rem = 4rem */
+  right: 2rem;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem; /* 10 * 0.25rem */
+  height: 2.5rem;
+  border-radius: 4px;
+  background-color: #3b82f6; /* Tailwind's bg-blue */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: none;
+  transition: background-color 0.2s ease-out;
+}
+
+.scroll-to-top-button:hover {
+  background-color: #1e40af; /* Tailwind's bg-blue-dark */
+}
+
+.top-scroll-btn {
+  color: white;
+}

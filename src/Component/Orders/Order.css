@@ -1,0 +1,66 @@
+.orders-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.orders-container {
+  min-width: 770px;
+}
+
+.orders-header {
+  display: none;
+  padding: 18px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .orders-header {
+    display: flex;
+  }
+}
+
+.orders-col {
+  min-width: 111px;
+}
+
+.date-col {
+  min-width: 175px;
+}
+
+.status-col {
+  min-width: 128px;
+}
+
+.title-col {
+  min-width: 213px;
+}
+
+.total-col {
+  min-width: 113px;
+}
+
+.action-col {
+  min-width: 113px;
+}
+
+.orders-label {
+  font-size: 0.875rem;
+  color: #1a1a1a; /* text-dark equivalent */
+}
+
+.orders-empty-message {
+  padding: 38px 16px;
+}
+
+@media (min-width: 640px) {
+  .orders-empty-message {
+    padding: 38px 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .orders-empty-message {
+    padding: 38px 40px;
+  }
+}

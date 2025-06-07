@@ -1,0 +1,130 @@
+.cart-section {
+  overflow: hidden;
+  padding: 5rem 0;
+  background-color: #f3f4f6;
+}
+
+.cart-container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.cart-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.cart-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.cart-clear-btn {
+  color: #2563eb;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cart-table-wrapper {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.cart-table-inner {
+  min-width: 1170px;
+}
+
+.cart-table-header {
+  display: flex;
+  align-items: center;
+  padding: 22px 30px;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.cart-col-product {
+  min-width: 400px;
+}
+
+.cart-col-price {
+  min-width: 180px;
+}
+
+.cart-col-qty {
+  min-width: 275px;
+}
+
+.cart-col-subtotal {
+  min-width: 200px;
+}
+
+.cart-col-action {
+  min-width: 50px;
+  text-align: right;
+}
+
+.cart-summary-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 36px;
+}
+
+@media (min-width: 1024px) {
+  .cart-summary-wrapper {
+    flex-direction: row;
+    gap: 44px;
+  }
+}
+
+/* Empty State */
+.cart-empty {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.cart-empty-icon {
+  padding-bottom: 30px;
+}
+
+.cart-empty-text {
+  padding-bottom: 24px;
+  font-size: 16px;
+  color: #374151;
+}
+
+.cart-continue-btn {
+  display: flex;
+  justify-content: center;
+  width: 24rem;
+  margin: 0 auto;
+  padding: 13px 24px;
+  background-color: #111827;
+  color: white;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.cart-continue-btn:hover {
+  background-color: #111827cc;
+}
+
+.empty-cart-img {
+  width: 100px !important;
+  height: 100px !important;
+  margin-left: auto;
+  margin-right: auto;
+  fill: black;
+}

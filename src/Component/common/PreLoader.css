@@ -1,0 +1,32 @@
+.loading-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999999;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.loading-spinner {
+  height: 4rem; /* 16 * 0.25rem = 4rem */
+  width: 4rem;
+  border-radius: 9999px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #3b82f6 transparent transparent transparent; /* Blue and transparent */
+  animation: spin 1s linear infinite;
+}
+
+/* Keyframes for spinning animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,342 @@
+.promo-section {
+  overflow: hidden;
+  padding-top: 5rem; /* 80px */
+  padding-bottom: 5rem; /* 80px */
+}
+
+.promo-container {
+  max-width: 1170px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .promo-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .promo-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.banner-container {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background-color: #f5f5f7;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1.875rem;
+}
+
+@media (min-width: 640px) {
+  .banner-container {
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner-container {
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .banner-container {
+    padding-top: 5.625rem;
+    padding-bottom: 5.625rem;
+    padding-left: 4.75rem;
+    padding-right: 4.75rem;
+  }
+}
+
+.banner-custom-width {
+  max-width: 550px;
+  width: 100%;
+}
+
+.custom-block-txt-banner {
+  display: block;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.banner-heading {
+  font-weight: 700;
+  font-size: 1.25rem; /* base: text-xl */
+  color: #1f2937;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  /* lg breakpoint */
+  .banner-heading {
+    font-size: 1.5rem; /* text-heading-4 */
+  }
+}
+
+@media (min-width: 1280px) {
+  /* xl breakpoint */
+  .banner-heading {
+    font-size: 1.875rem; /* text-heading-3 */
+  }
+}
+
+.custom-button-banner {
+  display: inline-flex;
+  font-weight: 500;
+  font-size: 0.875rem; /* text-custom-sm */
+  color: #ffffff;
+  background-color: #3b82f6; /* bg-blue */
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 38px; /* 9.5 * 4px */
+  padding-right: 38px;
+  border-radius: 0.375rem; /* rounded-md */
+  margin-top: 1.875rem; /* mt-7.5 */
+  transition-property: background-color;
+  transition-timing-function: ease-out;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+
+.custom-button-banner:hover {
+  background-color: #1e40af; /* hover:bg-blue-dark */
+}
+
+.promo-banner-img {
+  position: absolute;
+  bottom: 0;
+  right: 1rem; /* right-4 = 4 * 0.25rem = 1rem */
+  z-index: -1;
+}
+
+/* For large screens (lg breakpoint and up, usually min-width: 1024px) */
+@media (min-width: 1024px) {
+  .promo-banner-img {
+    right: 6.5rem; /* right-26 = 26 * 0.25rem = 6.5rem */
+  }
+}
+
+.banner-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* grid-cols-1 */
+  gap: 1.875rem; /* gap-7.5 = 7.5 * 0.25rem = 1.875rem */
+}
+
+@media (min-width: 1024px) {
+  /* lg breakpoint */
+  .banner-grid {
+    grid-template-columns: repeat(2, 1fr); /* lg:grid-cols-2 */
+  }
+}
+
+.custom-container-small-banner {
+  position: relative; /* relative */
+  z-index: 1; /* z-1 */
+  overflow: hidden; /* overflow-hidden */
+  border-radius: 0.5rem; /* rounded-lg (usually 0.5rem) */
+  background-color: #dbf4f3; /* bg-[#DBF4F3] */
+  padding-top: 2.5rem; /* py-10 = 10 * 0.25rem = 2.5rem */
+  padding-bottom: 2.5rem; /* py-10 */
+  padding-left: 1rem; /* px-4 = 4 * 0.25rem = 1rem */
+  padding-right: 1rem; /* px-4 */
+}
+
+@media (min-width: 640px) {
+  /* sm breakpoint */
+  .custom-container-small-banner {
+    padding-left: 1.875rem; /* px-7.5 = 7.5 * 0.25rem = 1.875rem */
+    padding-right: 1.875rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  /* xl breakpoint */
+  .custom-container-small-banner {
+    padding-top: 4rem; /* py-16 = 16 * 0.25rem = 4rem */
+    padding-bottom: 4rem;
+    padding-left: 2.5rem; /* px-10 = 10 * 0.25rem = 2.5rem */
+    padding-right: 2.5rem;
+  }
+}
+
+.small-banner-img-style {
+  position: absolute; /* absolute */
+  top: 50%; /* top-1/2 */
+  transform: translateY(-50%); /* -translate-y-1/2 */
+  left: 0.75rem; /* left-3 = 3 * 0.25rem */
+  z-index: -1; /* -z-1 */
+}
+
+@media (min-width: 640px) {
+  /* sm breakpoint */
+  .small-banner-img-style {
+    left: 2.5rem; /* left-10 = 10 * 0.25rem = 2.5rem */
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.custom-block-text-small-banner {
+  display: block;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #1f2937; /* Adjust to match your theme's "dark" */
+  margin-bottom: 0.375rem;
+}
+
+.custom-title-small-banner {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #1f2937; /* or your theme's "dark" */
+  margin-bottom: 0.625rem;
+}
+
+@media (min-width: 1024px) {
+  .custom-title-small-banner {
+    font-size: 1.5rem; /* adjust to match lg:text-heading-4 */
+    line-height: 2rem;
+  }
+}
+
+.custom-p-small-banner {
+  font-weight: 600;
+  font-size: 1rem; /* Adjust this based on your config */
+  color: #14b8a6; /* Adjust if your theme uses a different teal */
+}
+
+.custom-button-tredmill {
+  text-decoration: none;
+  display: inline-flex;
+  font-weight: 500; /* font-medium */
+  font-size: 0.875rem; /* text-custom-sm (adjust if different in your config) */
+  color: #ffffff; /* text-white */
+  background-color: #14b8a6; /* bg-teal (teal-500 in Tailwind) */
+  padding-top: 0.625rem; /* py-2.5 = 10px */
+  padding-bottom: 0.625rem;
+  padding-left: 2.125rem; /* px-8.5 = 34px */
+  padding-right: 2.125rem;
+  border-radius: 0.375rem; /* rounded-md = 6px */
+  transition: background-color 0.2s ease-out;
+  margin-top: 2.25rem; /* mt-9 = 36px */
+}
+
+.custom-button-tredmill:hover {
+  background-color: #0f766e; /* hover:bg-teal-dark (custom or teal-700) */
+}
+
+.custom-container-second-banner {
+  position: relative; /* relative */
+  z-index: 1; /* z-1 */
+  overflow: hidden; /* overflow-hidden */
+  border-radius: 0.5rem; /* rounded-lg (usually 0.5rem) */
+  background-color: #ffece1; /* bg-[#DBF4F3] */
+  padding-top: 2.5rem; /* py-10 = 10 * 0.25rem = 2.5rem */
+  padding-bottom: 2.5rem; /* py-10 */
+  padding-left: 1rem; /* px-4 = 4 * 0.25rem = 1rem */
+  padding-right: 1rem; /* px-4 */
+}
+
+@media (min-width: 640px) {
+  /* sm breakpoint */
+  .custom-container-second-banner {
+    padding-left: 1.875rem; /* px-7.5 = 7.5 * 0.25rem = 1.875rem */
+    padding-right: 1.875rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  /* xl breakpoint */
+  .custom-container-second-banner {
+    padding-top: 4rem; /* py-16 = 16 * 0.25rem = 4rem */
+    padding-bottom: 4rem;
+    padding-left: 2.5rem; /* px-10 = 10 * 0.25rem = 2.5rem */
+    padding-right: 2.5rem;
+  }
+}
+
+.small-banner-second-img {
+  position: absolute;
+  top: 50%; /* top-1/2 */
+  transform: translateY(-50%); /* -translate-y-1/2 */
+  right: 0.75rem; /* right-3 = 12px */
+  z-index: -1; /* -z-1 */
+
+  /* Responsive adjustment for sm:right-8.5 (e.g., 34px) */
+}
+
+@media (min-width: 640px) {
+  .small-banner-second-img {
+    right: 2.125rem; /* sm:right-8.5 = 34px */
+  }
+}
+
+.custom-block-second-banner {
+  display: block;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #1f2937; /* Adjust to match your theme's "dark" */
+  margin-bottom: 0.375rem;
+}
+
+.custom-title-second-small-banner {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #1f2937; /* or your theme's "dark" */
+  margin-bottom: 0.625rem;
+}
+
+@media (min-width: 1024px) {
+  .custom-title-second-small-banner {
+    font-size: 1.5rem; /* adjust to match lg:text-heading-4 */
+    line-height: 2rem;
+  }
+}
+
+.text-block-second-small-banner {
+  max-width: 285px;
+  font-size: 0.875rem; /* Assuming text-custom-sm = 14px */
+  line-height: 1.25rem; /* Optional: matches Tailwind's sm line-height */
+}
+
+.custom-second-small-button {
+  text-decoration: none;
+  display: inline-flex;
+  font-weight: 500; /* font-medium */
+  font-size: 0.875rem; /* Assuming text-custom-sm = 14px */
+  color: #ffffff; /* text-white */
+  background-color: #f97316; /* Tailwind orange (or use your theme's orange) */
+  padding-top: 10px; /* py-2.5 = 2.5 * 4px */
+  padding-bottom: 10px;
+  padding-left: 34px; /* px-8.5 = 8.5 * 4px */
+  padding-right: 34px;
+  border-radius: 0.375rem; /* rounded-md */
+  transition: background-color 0.2s ease-out;
+  margin-top: 30px; /* mt-7.5 = 7.5 * 4px = 30px */
+}
+
+.custom-second-small-button:hover {
+  background-color: #ea580c; /* Customize for hover:bg-orange-dark */
+}

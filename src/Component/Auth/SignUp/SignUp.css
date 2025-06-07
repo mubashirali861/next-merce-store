@@ -1,0 +1,160 @@
+.signup-section {
+  overflow: hidden;
+  padding: 80px 0;
+  background-color: #f7f7f8;
+}
+
+.signup-container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.signup-box {
+  max-width: 570px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 0.75rem;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+  padding: 1rem 2rem;
+}
+
+.signup-header {
+  text-align: center;
+  margin-bottom: 2.75rem;
+}
+
+.signup-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #1c1d1f;
+  margin-bottom: 0.375rem;
+}
+
+.signup-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+
+.signup-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.875rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e0e0e0;
+  background-color: #f1f1f1;
+  padding: 0.75rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background-color: #e5e5e5;
+}
+
+.social-google::before {
+  content: "";
+  display: inline-block;
+  background-image: url("/images/google-icon.svg"); /* Placeholder */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.social-github::before {
+  content: "";
+  display: inline-block;
+  background-image: url("/images/github-icon.svg"); /* Placeholder */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+}
+
+.divider {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 1.25rem;
+}
+
+.divider-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #e0e0e0;
+  z-index: -1;
+}
+
+.divider-text {
+  background-color: #ffffff;
+  padding: 0 0.75rem;
+  display: inline-block;
+}
+
+.signup-form-wrapper {
+  margin-top: 1.375rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.text-required {
+  color: red;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e0e0e0;
+  background-color: #f1f1f1;
+  color: #444;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.form-input:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.submit-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  color: white;
+  background-color: #1c1d1f;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2563eb;
+}
+
+.signin-link {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.signin-now {
+  color: #1c1d1f;
+  padding-left: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.signin-now:hover {
+  color: #2563eb;
+}

@@ -1,0 +1,105 @@
+.order-container {
+  max-width: 455px;
+  width: 100%;
+}
+
+.order-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05); /* Tailwind shadow-1 */
+}
+
+.order-header {
+  border-bottom: 1px solid #e5e7eb; /* gray-3 */
+  padding: 20px 16px;
+}
+
+@media (min-width: 640px) {
+  .order-header {
+    padding: 20px 34px;
+  }
+}
+
+.order-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #1f2937; /* dark text */
+}
+
+.order-content {
+  padding: 10px 16px 34px;
+}
+
+@media (min-width: 640px) {
+  .order-content {
+    padding: 10px 34px 34px;
+  }
+}
+
+.order-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.order-row--title {
+  padding-top: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.order-subtitle {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.order-subtitle--right {
+  text-align: right;
+}
+
+.order-item-title {
+  color: #1f2937;
+}
+
+.order-item-price {
+  color: #1f2937;
+  text-align: right;
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.order-total-label,
+.order-total-value {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.order-total-value {
+  text-align: right;
+}
+
+.order-button {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 12px 24px;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  background-color: #1e40af; /* blue-dark */
+}

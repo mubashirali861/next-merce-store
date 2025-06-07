@@ -1,0 +1,147 @@
+/* Container */
+.gender-dropdown-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06); /* shadow-1 */
+}
+
+/* Header */
+.gender-dropdown-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.75rem; /* py-3 */
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem; /* pl-6 */
+  padding-right: 1.375rem; /* pr-5.5 = 22px */
+  transition: box-shadow 0.2s ease;
+}
+
+.gender-dropdown-header--active {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* shadow-filter */
+}
+
+.gender-dropdown-title {
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.gender-dropdown-toggle {
+  background: none;
+  border: none;
+  transition: transform 0.2s ease-out;
+  padding: 0;
+  cursor: pointer;
+}
+
+.gender-dropdown-toggle--rotated {
+  transform: rotate(180deg);
+}
+
+.gender-dropdown-arrow {
+  width: 24px;
+  height: 24px;
+}
+
+/* Menu */
+.gender-dropdown-menu {
+  flex-direction: column;
+  gap: 0.75rem; /* gap-3 = 12px */
+  padding-top: 1.5rem; /* py-6 = 24px */
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem; /* pl-6 = 24px */
+  padding-right: 1.375rem; /* pr-5.5 = 22px */
+  display: flex; /* default display */
+}
+
+.gender-dropdown-menu.is-open {
+  display: flex;
+}
+
+.gender-dropdown-menu.is-closed {
+  display: none;
+}
+
+/* Gender Item Button */
+.gender-item-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: color 0.2s ease-out;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #606882;
+}
+
+.gender-item-button:hover {
+  color: #007bff;
+}
+
+.gender-item-button--selected {
+  color: #007bff;
+}
+
+.gender-item-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gender-checkbox {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem; /* rounded-md = 4px */
+  width: 1rem; /* w-4 = 16px */
+  height: 1rem; /* h-4 = 16px */
+  border: 1px solid #d1d5db; /* border-gray-3 approx */
+  background-color: #ffffff;
+  position: relative;
+}
+
+.gender-checkbox--selected {
+  border-color: #007bff;
+  background-color: #007bff;
+}
+.gender-check-icon {
+  color: white;
+  width: 1rem; /* match container size or smaller */
+  height: 1rem;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.gender-name {
+  font-size: 14px;
+  color: inherit;
+}
+
+.gender-count {
+  display: inline-flex;
+  padding: 0 8px;
+  font-size: 12px;
+  border-radius: 30px;
+  background-color: #e5e7eb;
+  transition: all 0.2s ease-out;
+}
+
+.gender-item-button:hover .gender-count {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.gender-count--selected {
+  background-color: #007bff;
+  color: #ffffff;
+}
